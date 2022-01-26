@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tarefas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h2>Salve sua próxima tarefa:</h2>
+    </header>
+    <main>
+    <article id="lista-tar-cont">
+        <form action="" id="formulario">
+            <input type="text" placeholder="O que você vai fazer?" id="tarefa">  
+            <button id="botao" type="submit">
+                <ion-icon name="add-outline"></ion-icon>
+            </button>
+          </form>
+        </article>
+          <article id="cont-lista">
+        <h2>Essas são suas tarefas:</h2>
+        <ul id="lista-tar">
+            <li class="tar-box template hide">
+                <span class="tar-title"></span>
+                <ion-icon class="add-btn" name="checkmark-outline"></ion-icon>
+                <ion-icon class="fech-btn" name="close-outline"></ion-icon>
+        </ul>
+    </article>
+    </main>
+    <script src="js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
